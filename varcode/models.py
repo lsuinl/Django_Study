@@ -7,6 +7,9 @@ class Post(models.Model):
     create_date = models.DateTimeField()
 
 
+    def __str__(self):
+        return self.subject
+
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     content = models.TextField()

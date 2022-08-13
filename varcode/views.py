@@ -4,4 +4,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("나만 너무 빠르나용용")
+    return HttpResponse("나만 빠르나용")
